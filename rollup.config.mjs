@@ -30,17 +30,9 @@ const plugins = [
       ],
     ],
     plugins: [
-      [
-        '@babel/plugin-proposal-decorators',
-        {
-          legacy: true,
-        },
-      ],
-      ['@babel/plugin-proposal-class-properties'],
       ['@babel/plugin-transform-template-literals'],
     ],
   }),
-  // Only minify in non-watch (build) mode for better dev experience
   !isWatch && terser(),
 ].filter(Boolean);
 
@@ -61,8 +53,6 @@ export default {
     if (warning.code === 'THIS_IS_UNDEFINED') {
       return;
     }
-
-    // console.warn everything else
     handler(warning);
   },
 };
