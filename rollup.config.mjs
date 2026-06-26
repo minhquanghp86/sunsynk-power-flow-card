@@ -30,6 +30,7 @@ const plugins = [
       ],
     ],
     plugins: [
+      ['@babel/plugin-syntax-decorators', { legacy: true }],
       ['@babel/plugin-transform-template-literals'],
     ],
   }),
