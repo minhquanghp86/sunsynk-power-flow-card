@@ -62,6 +62,7 @@ jobs:
         if: env.is_higher_version == 'true'
         run: |
           npm install --legacy-peer-deps
+          npm install @rollup/plugin-typescript tslib --legacy-peer-deps
           npm run build
 
       - name: 🛎️ Create release
