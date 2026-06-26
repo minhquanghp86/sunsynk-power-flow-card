@@ -16,29 +16,30 @@ import * as sk from './languages/sk.json';
 import * as sl from './languages/sl.json';
 import * as sv from './languages/sv.json';
 import * as uk from './languages/uk.json';
+import * as vi from './languages/vi.json';
 import { globalData } from '../helpers/globals';
 
 const languages: any = {
-	ca: ca,
-	'zh-Hans': cn, // Simplified Chinese
-	cs: cs,
-	da: da,
-	de: de,
-	en: en,
-	es: es,
-	et: et,
-	fr: fr,
-	it: it,
-	nl: nl,
-	pl: pl,
-	pt_BR: pt_br,
-	ru: ru,
-	sk: sk,
-	sl: sl,
-	sv: sv,
-	uk: uk,
+    ca: ca,
+    'zh-Hans': cn,
+    cs: cs,
+    da: da,
+    de: de,
+    en: en,
+    es: es,
+    et: et,
+    fr: fr,
+    it: it,
+    nl: nl,
+    pl: pl,
+    pt_BR: pt_br,
+    ru: ru,
+    sk: sk,
+    sl: sl,
+    sv: sv,
+    uk: uk,
+    vi: vi,
 };
-
 // Lightweight memoization for i18n lookups
 // - Caches base translations by key (without search/replace) per language
 // - Invalidates when the active language changes
