@@ -1,84 +1,88 @@
-# Sunsynk Power Flow Card (Bản Add Tiếng Việt)
+# Sunsynk Power Flow Card (Bản Tiếng Việt)
 
-An animated Home Assistant card to emulate the power flow that's shown on the Sunsynk Inverter screen. You can use this to display data from many inverters e.g. Sunsynk, Deye, Solis, Lux, FoxESS, Goodwe, Huawei etc as long as you have the required sensor data. See the [wiki](https://github.com/slipx06/sunsynk-power-flow-card/wiki) for integration methods and examples.
+Card Home Assistant có hoạt ảnh mô phỏng luồng điện hiển thị trên màn hình Inverter Sunsynk. Bạn có thể dùng card này để hiển thị dữ liệu từ nhiều loại inverter khác nhau như Sunsynk, Deye, Solis, Lux, FoxESS, Goodwe, Huawei... miễn là có đủ dữ liệu cảm biến cần thiết. Xem [wiki](https://github.com/slipx06/sunsynk-power-flow-card/wiki) để biết các phương pháp tích hợp và ví dụ.
 
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=slipx06&repository=sunsynk-power-flow-card&category=plugin)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/slipx06/sunsynk-power-flow-card?style=for-the-badge)
-[![Community Forum](https://img.shields.io/badge/community-forum-brightgreen.svg?style=for-the-badge)](https://community.home-assistant.io/t/sunsynk-deye-inverter-power-flow-card/562933/1)
-<a href="https://www.buymeacoffee.com/slipx" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="28" width="120"></a>
+> **Lưu ý:** Đây là bản fork được thêm hỗ trợ tiếng Việt. Mọi tính năng giữ nguyên so với [bản gốc](https://github.com/slipx06/sunsynk-power-flow-card).
 
-## Documentation
+[![Mở Home Assistant và thêm repository vào HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=minhquanghp86&repository=sunsynk-power-flow-card&category=plugin)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/minhquanghp86/sunsynk-power-flow-card?style=for-the-badge)
 
-Refer to [https://slipx06.github.io/sunsynk-power-flow-card/index.html](https://slipx06.github.io/sunsynk-power-flow-card/index.html)
+## Tài liệu
 
-## Features
+Tham khảo tài liệu gốc tại [https://slipx06.github.io/sunsynk-power-flow-card/index.html](https://slipx06.github.io/sunsynk-power-flow-card/index.html)
 
-- Option to switch between three card styles: `compact`, `lite` or `full`.
-- Wide view for 16:9 layout.
-- Animated power flow based on positive/negative/zero sensor values with configurable dynamic speed. (Supports inverted battery, AUX and grid power).
-- Dynamic battery image based on SOC.
-- Grid connected status.
-- Configurable battery size and shutdown SOC to calculate and display remaining battery runtime based on current battery usage and system time slot setting i.e. SOC, Grid Charge. Can be toggled off.
-- Daily Totals that can be toggled on or off.
-- Hide all solar data if not installed or specify number of mppts in use. Set custom MPPT labels.
-- "Use Timer" setting and "Energy Pattern" setting (Priority Load or Priority Battery) shown as dynamic icons, with the ability to hide if not required. If setup as switches can be toggled by clicking on the card.
-- Card can be scaled by setting the card_height and card_width attributes.
-- AUX and Non-essential can be hidden from the full card or assigned configurable labels.
-- Customisable - Change colours and images.
-- Most entities can be clicked to show more-info dialog.
-- Optional data points include self sufficiency and ratio percentages, battery temperature, AC and DC temperature.
-- Display additional non-essential, essential and AUX loads.
-- Display energy cost per kWh and solar sell status.
-- Select your inverter model for custom inverter status and battery status messages i.e. Sunsynk, Lux, Goodwe, Solis.
+## Tính năng
 
-## Screenshots
+- Lựa chọn giữa ba kiểu card: `compact`, `lite` hoặc `full`.
+- Bố cục màn hình rộng 16:9.
+- Hoạt ảnh luồng điện dựa trên giá trị cảm biến dương/âm/không với tốc độ động có thể cấu hình (hỗ trợ đảo chiều ắc quy, AUX và lưới điện).
+- Hình ảnh ắc quy động theo SOC.
+- Trạng thái kết nối lưới điện.
+- Cấu hình dung lượng ắc quy và SOC tắt máy để tính và hiển thị thời gian còn lại của ắc quy dựa trên mức tiêu thụ hiện tại và cài đặt time slot — có thể bật/tắt.
+- Số liệu tiêu thụ trong ngày có thể bật/tắt.
+- Ẩn toàn bộ dữ liệu PV nếu chưa lắp đặt hoặc chỉ định số MPPT đang sử dụng. Đặt nhãn MPPT tùy chỉnh.
+- Hiển thị cài đặt "Dùng hẹn giờ" và "Ưu tiên năng lượng" (Ưu tiên tải hoặc Ưu tiên ắc quy) dưới dạng biểu tượng động, có thể ẩn nếu không cần. Nếu cấu hình dạng switch có thể bật/tắt trực tiếp trên card.
+- Có thể thay đổi kích thước card bằng thuộc tính `card_height` và `card_width`.
+- AUX và tải phụ có thể ẩn hoặc đặt nhãn tùy chỉnh.
+- Tùy chỉnh màu sắc và hình ảnh.
+- Hầu hết các thực thể có thể bấm để xem thông tin chi tiết.
+- Các điểm dữ liệu tùy chọn gồm tỉ lệ tự chủ, nhiệt độ ắc quy, nhiệt độ AC và DC.
+- Hiển thị thêm tải phụ, tải chính và tải AUX.
+- Hiển thị giá điện theo kWh và trạng thái bán điện mặt trời.
+- Chọn model inverter để hiển thị thông báo trạng thái phù hợp với từng hãng: Sunsynk, Lux, Goodwe, Solis.
 
-_Compact Version_
+## Ảnh minh họa
+
+_Phiên bản Compact_
 
 ![image](https://github.com/slipx06/sunsynk-power-flow-card/assets/7227275/b1e437a8-d1f7-4d6a-a549-1cc908950002)
 ![image](https://github.com/slipx06/sunsynk-power-flow-card/assets/7227275/49c499c5-9d2b-43e7-8f5d-5b9da5e07fb9)
 
-_Lite Version_
+_Phiên bản Lite_
 
 ![image](https://github.com/slipx06/sunsynk-power-flow-card/assets/7227275/d25c621c-2607-445f-b3a3-865930387a05)
 ![image](https://github.com/slipx06/sunsynk-power-flow-card/assets/7227275/5a9078ee-7375-4f1c-affa-6fe291d62f8a)
 ![image](https://github.com/slipx06/sunsynk-power-flow-card/assets/7227275/73d6fae3-3e6b-4891-acc2-deb29156cd2d)
 ![image](https://github.com/slipx06/sunsynk-power-flow-card/assets/7227275/54ae290d-aa5c-428e-8a00-2a75e11c2de8)
 
-_Full Version_
+_Phiên bản Full_
 
 ![image](https://github.com/slipx06/sunsynk-power-flow-card/assets/7227275/fdcce257-e7b5-4874-926c-17e911e83eba)
 ![image](https://github.com/slipx06/sunsynk-power-flow-card/assets/7227275/12af5b02-c456-4685-a50f-bd0044b9e9b0)
 
-_Wide Full Version (2 batteries)_
+_Phiên bản Full màn hình rộng (2 ắc quy)_
 
 ![{4D3F02C5-3DC5-4995-AD99-7478E6DE5557}](https://github.com/user-attachments/assets/af169593-c73f-469e-bc8b-62fb72b8af43)
 
-_Wide Lite Version (2 batteries)_
+_Phiên bản Lite màn hình rộng (2 ắc quy)_
 
 ![{F448EFB0-5549-470B-BAE0-13F9DF2E3769}](https://github.com/user-attachments/assets/100c80d2-1d5f-46f4-ae83-f48c923cadf6)
 
-_Wide Compact Version (2 batteries)_
+_Phiên bản Compact màn hình rộng (2 ắc quy)_
 
 ![{B8CBC3C3-0E0A-4E37-B489-C41CB8EA4E7E}](https://github.com/user-attachments/assets/1cd5508d-33a0-4df9-9665-5a4d9e753178)
 
-## Installation
+## Cài đặt
 
-The card can be installed via HACS (recommended) or manually.
+Card có thể cài qua HACS (khuyến nghị) hoặc thủ công.
 
-### Installation using HACS
+### Cài đặt qua HACS
 
-[![hacs_badge](https://img.shields.io/badge/HACS-Default-blue.svg)](https://github.com/custom-components/hacs)
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
 
-1. Install HACS.
-2. Search & Install sunsynk-power-flow-card or click the button below.
+1. Cài đặt HACS.
+2. Vào HACS → menu 3 chấm → **Custom repositories**.
+3. Nhập `minhquanghp86/sunsynk-power-flow-card`, chọn loại **Lovelace** → bấm **Add**.
+4. Tìm kiếm **sunsynk** trong HACS → bấm **Install**.
 
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=slipx06&repository=sunsynk-power-flow-card&category=plugin)
+Hoặc bấm nút bên dưới:
 
-### Manual Installation
+[![Mở Home Assistant và thêm repository vào HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=minhquanghp86&repository=sunsynk-power-flow-card&category=plugin)
 
-1. Create a new directory under `www` and name it `sunsynk-power-flow-card` e.g `www/sunsynk-power-flow-card/`.
-2. Copy the `sunsynk-power-flow-card.js` into the directory.
-3. Add the resource to your Dashboard. You can append the filename with a `?ver=x` and increment x each time you download a new version to force a reload and avoid using a cached version. It is also a good idea to clear your browser cache.
+### Cài đặt thủ công
+
+1. Tạo thư mục mới trong `www` với tên `sunsynk-power-flow-card`, ví dụ: `www/sunsynk-power-flow-card/`.
+2. Sao chép file `sunsynk-power-flow-card.js` vào thư mục đó.
+3. Thêm resource vào Dashboard. Có thể thêm `?ver=x` vào cuối tên file và tăng x mỗi khi tải phiên bản mới để tránh dùng bản cache cũ. Nên xóa cache trình duyệt sau mỗi lần cập nhật.
 
 ![image](https://user-images.githubusercontent.com/7227275/235441241-93ab0c7d-341d-428f-8ca8-60ec932dde2d.png)
