@@ -4,7 +4,6 @@
     "module": "ESNext",
     "moduleResolution": "node",
     "lib": ["ES2021", "DOM", "DOM.Iterable", "WebWorker"],
-    "noEmit": true,
     "noUnusedParameters": true,
     "noImplicitReturns": false,
     "noFallthroughCasesInSwitch": true,
