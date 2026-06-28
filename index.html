@@ -1,0 +1,258 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunsynk Power Flow Card (Bản Tiếng Việt) &mdash; sunsynk-power-flow-card  documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Configuration" href="configuration.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#">
+            
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="examples/sunsynk.html">Sunsynk and Deye Inverters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/ecoflow.html">Ecoflow Inverters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/foxess.html">FoxESS Inverter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/goodwe.html">Goodwe Inverter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/huawei.html">Huawei Inverter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/lux.html">Lux Inverter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/powmr.html">PowMr Inverters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/sigenergy.html">Sigenergy Sigenstor with Gateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/solax.html">SolaX Inverter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/solis.html">Solis Inverter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/victron.html">Victron Inverters</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contribute</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contribute/bugs.html">Reporting Bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute/devcontainer.html">VS Code - DevContainer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute/devcycle.html">Development Cycle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute/docs.html">Documentation</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">sunsynk-power-flow-card</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Sunsynk Power Flow Card (Bản Tiếng Việt)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="sunsynk-power-flow-card-ban-tieng-viet">
+<h1>Sunsynk Power Flow Card (Bản Tiếng Việt)<a class="headerlink" href="#sunsynk-power-flow-card-ban-tieng-viet" title="Link to this heading"></a></h1>
+<p>Card Home Assistant có hoạt ảnh mô phỏng luồng điện hiển thị trên màn hình Inverter Sunsynk. Bạn có thể dùng card này để hiển thị dữ liệu từ nhiều loại inverter khác nhau như Sunsynk, Deye, Solis, Lux, FoxESS, Goodwe, Huawei… miễn là có đủ dữ liệu cảm biến cần thiết. Xem <a class="reference external" href="https://github.com/slipx06/sunsynk-power-flow-card/wiki">wiki</a> để biết các phương pháp tích hợp và ví dụ.</p>
+<blockquote>
+<div><p><strong>Lưu ý:</strong> Đây là bản fork được thêm hỗ trợ tiếng Việt. Mọi tính năng giữ nguyên so với <a class="reference external" href="https://github.com/slipx06/sunsynk-power-flow-card">bản gốc</a>.</p>
+</div></blockquote>
+<p><a class="reference external" href="https://my.home-assistant.io/redirect/hacs_repository/?owner=minhquanghp86&amp;repository=sunsynk-power-flow-card&amp;category=plugin"><img alt="Mở Home Assistant và thêm repository vào HACS" src="https://my.home-assistant.io/badges/hacs_repository.svg" /></a>
+<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/minhquanghp86/sunsynk-power-flow-card?style=for-the-badge" /></p>
+<section id="tai-lieu">
+<h2>Tài liệu<a class="headerlink" href="#tai-lieu" title="Link to this heading"></a></h2>
+<p>Tham khảo tài liệu gốc tại <a class="reference external" href="https://slipx06.github.io/sunsynk-power-flow-card/index.html">https://slipx06.github.io/sunsynk-power-flow-card/index.html</a></p>
+</section>
+<section id="tinh-nang">
+<h2>Tính năng<a class="headerlink" href="#tinh-nang" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Lựa chọn giữa ba kiểu card: <code class="docutils literal notranslate"><span class="pre">compact</span></code>, <code class="docutils literal notranslate"><span class="pre">lite</span></code> hoặc <code class="docutils literal notranslate"><span class="pre">full</span></code>.</p></li>
+<li><p>Bố cục màn hình rộng 16:9.</p></li>
+<li><p>Hoạt ảnh luồng điện dựa trên giá trị cảm biến dương/âm/không với tốc độ động có thể cấu hình (hỗ trợ đảo chiều ắc quy, AUX và lưới điện).</p></li>
+<li><p>Hình ảnh ắc quy động theo SOC.</p></li>
+<li><p>Trạng thái kết nối lưới điện.</p></li>
+<li><p>Cấu hình dung lượng ắc quy và SOC tắt máy để tính và hiển thị thời gian còn lại của ắc quy dựa trên mức tiêu thụ hiện tại và cài đặt time slot — có thể bật/tắt.</p></li>
+<li><p>Số liệu tiêu thụ trong ngày có thể bật/tắt.</p></li>
+<li><p>Ẩn toàn bộ dữ liệu PV nếu chưa lắp đặt hoặc chỉ định số MPPT đang sử dụng. Đặt nhãn MPPT tùy chỉnh.</p></li>
+<li><p>Hiển thị cài đặt “Dùng hẹn giờ” và “Ưu tiên năng lượng” (Ưu tiên tải hoặc Ưu tiên ắc quy) dưới dạng biểu tượng động, có thể ẩn nếu không cần. Nếu cấu hình dạng switch có thể bật/tắt trực tiếp trên card.</p></li>
+<li><p>Có thể thay đổi kích thước card bằng thuộc tính <code class="docutils literal notranslate"><span class="pre">card_height</span></code> và <code class="docutils literal notranslate"><span class="pre">card_width</span></code>.</p></li>
+<li><p>AUX và tải phụ có thể ẩn hoặc đặt nhãn tùy chỉnh.</p></li>
+<li><p>Tùy chỉnh màu sắc và hình ảnh.</p></li>
+<li><p>Hầu hết các thực thể có thể bấm để xem thông tin chi tiết.</p></li>
+<li><p>Các điểm dữ liệu tùy chọn gồm tỉ lệ tự chủ, nhiệt độ ắc quy, nhiệt độ AC và DC.</p></li>
+<li><p>Hiển thị thêm tải phụ, tải chính và tải AUX.</p></li>
+<li><p>Hiển thị giá điện theo kWh và trạng thái bán điện mặt trời.</p></li>
+<li><p>Chọn model inverter để hiển thị thông báo trạng thái phù hợp với từng hãng: Sunsynk, Lux, Goodwe, Solis.</p></li>
+</ul>
+</section>
+<section id="anh-minh-hoa">
+<h2>Ảnh minh họa<a class="headerlink" href="#anh-minh-hoa" title="Link to this heading"></a></h2>
+<p><em>Phiên bản Compact</em></p>
+<p><img alt="image" src="https://github.com/slipx06/sunsynk-power-flow-card/assets/7227275/b1e437a8-d1f7-4d6a-a549-1cc908950002" />
+<img alt="image" src="https://github.com/slipx06/sunsynk-power-flow-card/assets/7227275/49c499c5-9d2b-43e7-8f5d-5b9da5e07fb9" /></p>
+<p><em>Phiên bản Lite</em></p>
+<p><img alt="image" src="https://github.com/slipx06/sunsynk-power-flow-card/assets/7227275/d25c621c-2607-445f-b3a3-865930387a05" />
+<img alt="image" src="https://github.com/slipx06/sunsynk-power-flow-card/assets/7227275/5a9078ee-7375-4f1c-affa-6fe291d62f8a" />
+<img alt="image" src="https://github.com/slipx06/sunsynk-power-flow-card/assets/7227275/73d6fae3-3e6b-4891-acc2-deb29156cd2d" />
+<img alt="image" src="https://github.com/slipx06/sunsynk-power-flow-card/assets/7227275/54ae290d-aa5c-428e-8a00-2a75e11c2de8" /></p>
+<p><em>Phiên bản Full</em></p>
+<p><img alt="image" src="https://github.com/slipx06/sunsynk-power-flow-card/assets/7227275/fdcce257-e7b5-4874-926c-17e911e83eba" />
+<img alt="image" src="https://github.com/slipx06/sunsynk-power-flow-card/assets/7227275/12af5b02-c456-4685-a50f-bd0044b9e9b0" /></p>
+<p><em>Phiên bản Full màn hình rộng (2 ắc quy)</em></p>
+<p><img alt="{4D3F02C5-3DC5-4995-AD99-7478E6DE5557}" src="https://github.com/user-attachments/assets/af169593-c73f-469e-bc8b-62fb72b8af43" /></p>
+<p><em>Phiên bản Lite màn hình rộng (2 ắc quy)</em></p>
+<p><img alt="{F448EFB0-5549-470B-BAE0-13F9DF2E3769}" src="https://github.com/user-attachments/assets/100c80d2-1d5f-46f4-ae83-f48c923cadf6" /></p>
+<p><em>Phiên bản Compact màn hình rộng (2 ắc quy)</em></p>
+<p><img alt="{B8CBC3C3-0E0A-4E37-B489-C41CB8EA4E7E}" src="https://github.com/user-attachments/assets/1cd5508d-33a0-4df9-9665-5a4d9e753178" /></p>
+</section>
+<section id="cai-dat">
+<h2>Cài đặt<a class="headerlink" href="#cai-dat" title="Link to this heading"></a></h2>
+<p>Card có thể cài qua HACS (khuyến nghị) hoặc thủ công.</p>
+<section id="cai-dat-qua-hacs">
+<h3>Cài đặt qua HACS<a class="headerlink" href="#cai-dat-qua-hacs" title="Link to this heading"></a></h3>
+<p><a class="reference external" href="https://github.com/custom-components/hacs"><img alt="hacs_badge" src="https://img.shields.io/badge/HACS-Custom-orange.svg" /></a></p>
+<ol class="arabic simple">
+<li><p>Cài đặt HACS.</p></li>
+<li><p>Vào HACS → menu 3 chấm → <strong>Custom repositories</strong>.</p></li>
+<li><p>Nhập <code class="docutils literal notranslate"><span class="pre">minhquanghp86/sunsynk-power-flow-card</span></code>, chọn loại <strong>Lovelace</strong> → bấm <strong>Add</strong>.</p></li>
+<li><p>Tìm kiếm <strong>sunsynk</strong> trong HACS → bấm <strong>Install</strong>.</p></li>
+</ol>
+<p>Hoặc bấm nút bên dưới:</p>
+<p><a class="reference external" href="https://my.home-assistant.io/redirect/hacs_repository/?owner=minhquanghp86&amp;repository=sunsynk-power-flow-card&amp;category=plugin"><img alt="Mở Home Assistant và thêm repository vào HACS" src="https://my.home-assistant.io/badges/hacs_repository.svg" /></a></p>
+</section>
+<section id="cai-dat-thu-cong">
+<h3>Cài đặt thủ công<a class="headerlink" href="#cai-dat-thu-cong" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Tạo thư mục mới trong <code class="docutils literal notranslate"><span class="pre">www</span></code> với tên <code class="docutils literal notranslate"><span class="pre">sunsynk-power-flow-card</span></code>, ví dụ: <code class="docutils literal notranslate"><span class="pre">www/sunsynk-power-flow-card/</span></code>.</p></li>
+<li><p>Sao chép file <code class="docutils literal notranslate"><span class="pre">sunsynk-power-flow-card.js</span></code> vào thư mục đó.</p></li>
+<li><p>Thêm resource vào Dashboard. Có thể thêm <code class="docutils literal notranslate"><span class="pre">?ver=x</span></code> vào cuối tên file và tăng x mỗi khi tải phiên bản mới để tránh dùng bản cache cũ. Nên xóa cache trình duyệt sau mỗi lần cập nhật.</p></li>
+</ol>
+<p><img alt="image" src="https://user-images.githubusercontent.com/7227275/235441241-93ab0c7d-341d-428f-8ca8-60ec932dde2d.png" /></p>
+</section>
+</section>
+</section>
+<section id="table-of-contents">
+<h1>Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Configuration</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="examples/sunsynk.html">Sunsynk and Deye Inverters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/ecoflow.html">Ecoflow Inverters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/foxess.html">FoxESS Inverter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/goodwe.html">Goodwe Inverter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/huawei.html">Huawei Inverter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/lux.html">Lux Inverter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/powmr.html">PowMr Inverters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/sigenergy.html">Sigenergy Sigenstor with Gateway</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/solax.html">SolaX Inverter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/solis.html">Solis Inverter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples/victron.html">Victron Inverters</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Contribute</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contribute/bugs.html">Reporting Bugs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute/devcontainer.html">VS Code - DevContainer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute/devcycle.html">Development Cycle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute/docs.html">Documentation</a></li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="configuration.html" class="btn btn-neutral float-right" title="Configuration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, slipx06.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>  
+
+<style>
+	.wy-nav-content {
+		max-width: 1000px !important;
+	}
+
+	/* and fix wrap bug per https://rackerlabs.github.io/docs-rackspace/tools/rtd-tables.html */
+	.wy-table-responsive table td {
+		/* !important prevents the common CSS stylesheets from overriding
+        this as on RTD they are loaded after this stylesheet */
+		white-space: normal !important;
+	}
+
+	.wy-table-responsive {
+		overflow: visible !important;
+	}
+</style>
+
+
+
+</body>
+</html>
