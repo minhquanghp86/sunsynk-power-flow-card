@@ -1,6 +1,6 @@
 {
   "name": "sunsynk-power-flow-card",
-  "version": "7.5.2",
+  "version": "7.5.3",
   "description": "Một thẻ Home Assistant có thể tùy chỉnh để mô phỏng quy trình hoạt động của Hệ thống Sunsynk được hiển thị trên màn hình Biến tần.",
   "main": "sunsynk-power-flow-card.js",
   "prettier": {
